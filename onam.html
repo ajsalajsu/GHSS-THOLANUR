@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            ONAM
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="front.jpg" class="logo">
+                <nav>
+                    <ul class="sidebar">
+                        <li onclick=hideSidebar() class="slide"><span><b><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></b></span></li>
+                        <li class="slide"><a href="index.html">HOME</a></li>
+                        <li class="slide"><a href="about.html">ABOUT</a></li>
+                        <li class="slide"><a href="programs.html">PROGRAMS</a></li>
+                        <li class="slide"><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+
+
+                    <ul>
+                        <li class="hideOnMobile" ><a href="index.html">HOME</a></li>
+                        <li class="hideOnMobile" ><a href="about.html">ABOUT</a></li>
+                        <li class="hideOnMobile"><a href="programs.html">PROGRAMS</a></li>
+                        <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+                        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <h1>ONAM</h1>
+
+            <P>The festival commemorates the Vamana avatar of Vishnu, the subsequent homecoming of the legendary Emperor Mahabali and mythologies of Hinduism related to Kashyapa and Parashurama.
+                <br> Onam is a major annual event for Malayali people in and outside Kerala.</P>
+                <div class="gallery">
+
+                    <img src="onam3.jpg" class="onamimg">
+                    <img src="onam1.jpg" class="onamimg">
+                    <img src="onam5.jpg" class="onamimg">
+                    <img src="onam4.jpg" class="onamimg">
+
+
+                </div>
+
+            
+        </div>
+        <div class="condainer2">
+
+
+        </div>
+        
+        <script>
+
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    </body>
+</html>

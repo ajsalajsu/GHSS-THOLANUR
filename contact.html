@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>
+                CONTACT
+        </title>
+    </head>
+    <body>
+
+        <style>
+            .con-body{
+                padding: center;
+                padding-top:5%;
+                margin: center;
+                height: 100vh;
+                align-items: center;
+                font-family:Arial, Helvetica, sans-serif ;
+                font-size: 13px;
+            }
+            .con-all{
+                padding: center;
+                margin:center;
+                align-items:center;
+                border-radius: 6px;
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+                0 10px 10px rgba(0, 0, 0, 0.22);
+                border-width: 50%;
+                justify-content:space-between;
+    
+                
+            }
+            .con-h2{
+                color:#fff;
+                transition:1s;
+            }
+            .email{
+                color:white;
+                background: #fff;
+            }
+            .email:hover{
+				background-color:aqua;
+				}
+            .h1hea{
+                font-size:35px;
+                position:relative;
+                cursor:pointer;
+                
+            }
+            .h1hea::after{
+                content:"";
+                left:0;
+                bottom:-18px;
+                width:0%;
+                height:4px;
+                position:absolute;
+                transition:.5s;
+                background:linear-gradient(to right, rgb(0, 255, 179),rgb(238, 255, 0),rgb(0, 255, 255));
+            }
+            .h1hea:hover::after{
+                width: 100%;
+            }
+            .con-h2:hover{
+				font-size:37px;
+				color:aqua;
+				text-transform:uppercsae;
+				
+				}
+
+
+        </style>
+        <div class="container">
+            <div class="navbar">
+                <img src="front.jpg" class="logo">
+                <nav>
+                    <ul class="sidebar">
+                        <li onclick=hideSidebar() class="slide"><span><b><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></b></span></li>
+                        <li class="slide"><a href="index.html">HOME</a></li>
+                        <li class="slide"><a href="about.html">ABOUT</a></li>
+                        <li class="slide"><a href="programs.html">PROGRAMS</a></li>
+                        <li class="slide"><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+
+
+                    <ul>
+                        <li class="hideOnMobile" ><a href="index.html">HOME</a></li>
+                        <li class="hideOnMobile" ><a href="about.html">ABOUT</a></li>
+                        <li class="hideOnMobile"><a href="programs.html">PROGRAMS</a></li>
+                        <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+                        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header">
+                <h1 class="h1hea">CONTACT</h1>
+            </div>
+            <div class="con-body">
+
+                <div class="con-all">
+                    <img src="email-2.png" class="email">
+                    <h2 class="con-h2">Ghsstholanur@gmail.com</h2>
+                </div>
+
+                <div class="con-all">
+                    <img src="phone-solid-24.png" class="email">
+                    <h2 class="con-h2">+91 9495773592</h2>
+                </div>
+
+                <div class="con-all">
+                    <img src="instagram-alt-logo-24.png" class="email">
+                    <h2 class="con-h2">GHSS_THOLANUR</h2>
+                </div>
+
+                
+
+                <div class="con-all">
+                    <img src="edit-location-solid-24.png" class="email">
+                    <h2 class="con-h2">PGG7+WHC, school road tholanur, Kuthannur-II</h2>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="condainer2">
+
+
+        </div>
+
+        <script>
+
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    </body>
+</html>

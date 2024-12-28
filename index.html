@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+            G H S S THOLANUR
+        </title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="front.jpg" class="logo">
+                <nav>
+
+                    <ul class="sidebar">
+                        <li onclick=hideSidebar() class="slide"><span><b><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></b></span></li>
+                        <li class="slide"><a href="index.html">HOME</a></li>
+                        <li class="slide"><a href="about.html">ABOUT</a></li>
+                        <li class="slide"><a href="programs.html">PROGRAMS</a></li>
+                        <li class="slide"><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+
+
+                    <ul>
+                        <li class="hideOnMobile" ><a href="index.html">HOME</a></li>
+                        <li class="hideOnMobile" ><a href="about.html">ABOUT</a></li>
+                        <li class="hideOnMobile"><a href="programs.html">PROGRAMS</a></li>
+                        <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+                        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1> G H S S THOLANUR </h1>
+                    <p> was established in 1903 and it is managed by the Department of  Education. It is located in Rural area. It is located in KUZHALMANNAM block of PALAKKAD district of Kerala.</p>
+                    <button type="button"><a class="explore" href="explore.html">EXPLORE!</a></button>
+
+                </div>
+                
+    
+
+        </div>
+        </div>
+
+        <script>
+
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+
+        <div class="condainer2">
+
+
+        </div>
+        
+
+
+        
+    </body>
+</html>
