@@ -202,3 +202,9 @@ button:hover{
         width:100%;
     }
 }
+.info-tag{
+    margin-top: 47%;
+    text-align: center;
+    color:grey;
+}
+
